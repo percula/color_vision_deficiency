@@ -71,7 +71,7 @@ class ColorDeficiencyFiltered extends StatelessWidget {
 /// import 'package:color_vision_deficiency/l10n/app_localizations.dart' as cvd;
 ///
 /// MaterialApp(
-///   ...
+///   // ...
 ///   localizationsDelegates: [
 ///    ...AppLocalizations.localizationsDelegates,
 ///    cvd.AppLocalizations.delegate,

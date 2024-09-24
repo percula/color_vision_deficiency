@@ -1,0 +1,28 @@
+name: example
+publish_to: "none"
+
+environment:
+  sdk: ">=2.12.0-0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  color_vision_deficiency:
+  flutter_svg: 2.0.10
+
+dev_dependencies:
+  flutter_driver:
+    sdk: flutter
+  flutter_test:
+    sdk: flutter
+  test: ^1.15.7
+
+dependency_overrides:
+  color_vision_deficiency:
+    path: ../
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/

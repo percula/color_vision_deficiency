@@ -1,39 +1,27 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+A set of tools to develop better apps for people with Color Vision Deficiency (CVD, aka color blindness). This lets you see how your app appears in the eyes of someone with CVD.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+![Normal](images/none.png)
+![Protanopia](images/protanopia.png)
+![Tritanopia](images/tritanopia.png)
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Wrap your `MaterialApp` with `ColorDeficiencyFiltered` to see what it looks like in the eyes of people with CVD. Use `ColorDeficiencyDropdown` to easily switch between different types of CVD.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+IMPORTANT: To use `ColorDeficiencyDropdown`, you must include the translations
+ delegate in your `MaterialApp` constructor:
 
-```dart
-const like = 'sample';
-```
+ ```dart
+ import 'package:color_vision_deficiency/l10n/app_localizations.dart' as cvd;
 
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+ MaterialApp(
+   // ...
+   localizationsDelegates: [
+    ...AppLocalizations.localizationsDelegates,
+    cvd.AppLocalizations.delegate,
+   ],
+   supportedLocales: S.locales,
+ );
+ ```
