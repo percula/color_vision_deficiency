@@ -1,0 +1,29 @@
+{
+  "none": "None",
+  "protanopia": "Protanopia",
+  "protanomaly": "Protanomaly",
+  "deuteranopia":  "Deuteranopia",
+  "deuteranomaly": "Deuteranomaly",
+  "tritanopia":  "Tritanopia",
+  "tritanomaly": "Tritanomaly",
+  "achromatopsia":  "Achromatopsia",
+  "achromatomaly": "Achromatomaly",
+  "percent": "{filter} ({percent} of population)",
+  "@percent": {
+    "placeholders": {
+      "filter": {
+        "type": "String",
+        "example": "Protanopia"
+      },
+      "percent": {
+        "type": "double",
+        "format": "decimalPercentPattern",
+        "example": "1",
+        "description": "Percentage of population",
+        "optionalParameters": {
+          "decimalDigits": 2
+        }
+      }
+    }
+  }
+}
