@@ -1,8 +1,6 @@
 A set of tools to develop better apps for people with Color Vision Deficiency (CVD, aka color blindness). This lets you see how your app appears in the eyes of someone with CVD.
 
-![Normal](https://github.com/percula/color_vision_deficiency/raw/main/images/none.png)
-![Protanopia](https://github.com/percula/color_vision_deficiency/raw/main/images/protanopia.png)
-![Tritanopia](https://github.com/percula/color_vision_deficiency/raw/main/images/tritanopia.png)
+<img src="https://github.com/percula/color_vision_deficiency/raw/main/images/none.png" alt="Screenshot for normal vision" width="300"><img src="https://github.com/percula/color_vision_deficiency/raw/main/images/protanopia.png" alt="Screenshot for protanopia vision" width="300"><img src="https://github.com/percula/color_vision_deficiency/raw/main/images/tritanopia.png" alt="Screenshot for tritanopia vision" width="300">
 
 ## Getting started
 
