@@ -1,6 +1,6 @@
 name: color_vision_deficiency
 description: "A set of tools to develop better apps for people with color vision deficiency (aka color blindness)"
-version: 0.0.1
+version: 0.0.1+2
 homepage: https://github.com/percula/color_vision_deficiency
 
 environment:
